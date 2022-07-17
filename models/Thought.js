@@ -8,7 +8,7 @@ const thoughtSchema = new Schema(
       username: String,
       // reactions: [{ type: Schema.Types.ReactionID, ref: "text"}],
       required: true,
-      max_length: 250,
+      max_length: 2750,
     },
   {
     toJSON: {

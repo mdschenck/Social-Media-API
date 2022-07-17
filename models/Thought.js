@@ -10,15 +10,25 @@ const thoughtSchema = new Schema(
     },
     thoughtText: {
       type: String,
-      username: String,
-      reactions: [{ type: Schema.Types.ReactionID, ref: "text"}],
-      required: true,
-      max_length: 2750,
     },
+    username: {
+      type: String,
+    },
+    reactions: [
+      { 
+        type: Schema.Types.ObjectID, 
+        ref: "Reaction",
+        required: true,
+        max_length: 250,
+      }
+    ],
+
+    // },
     createdAt: {
       type: Date,
       default: Date.now,
     },
+  },
   {
     toJSON: {
       getters: true,

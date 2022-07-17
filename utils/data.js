@@ -25,7 +25,6 @@ const names = [
   'Smith',
   'Jones',
   'Coollastname',
-  'enter_name_here',
   'Ze',
   'Zechariah',
   'Zeek',
@@ -74,25 +73,34 @@ const names = [
   'Parker',
 ];
 
-const appDescriptions = [
-  'Decision Tracker',
-  'Find My Phone',
-  'Learn Piano',
-  'Starbase Defender',
-  'Tower Defense',
-  'Monopoly Money Manager',
-  'Movie trailers',
+const randomThoughts = [
+  'Sample post 1',
+  'Sample post 2',
+  'Sample post 3',
+  'Sample post 4',
+  'Sample post 5',
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu erat sed nisi cursus rhoncus a eget eros. Etiam sagittis urna sed ex pulvinar volutpat. In lacus ante, mollis sed dictum nec, volutpat a dui. Integer ut maximus sapien.",
+  "Fusce feugiat velit vitae bibendum hendrerit. Vivamus ultricies vestibulum scelerisque. Fusce dapibus auctor erat, in volutpat velit mattis sit amet. Morbi ac nisl interdum diam dignissim convallis nec eu purus. Sed pretium justo vestibulum, sagittis diam vel, scelerisque metus.",
+  "Ut nisl tellus, accumsan quis nisl non, semper convallis libero. Vestibulum at tellus nisl. Donec in ultricies nibh. Aenean lacinia ullamcorper magna, commodo interdum massa finibus luctus.", 
+  "In vehicula diam vitae justo pulvinar convallis. Suspendisse convallis velit magna, ut pretium libero gravida quis. Vivamus venenatis suscipit viverra.",
+
+];
+
+const randomReactions = [
+  'Random Reaction 1',
+  'Wow that is incredible!',
+  'Hey! Super Cool!',
+  'I do not agree',
+  'This is wholly untrue.',
+  'Skittles is the greatest candy.',
+  'Let me think about that.',
   'Hello world',
-  'Stupid Social Media App',
-  'Notes',
-  'Messages',
-  'Email',
-  'Compass',
-  'Firefox',
-  'Running app',
-  'Cooking app',
-  'Poker',
-  'Deliveries',
+  'This is Foo.',
+  'Random Reaction 2',
+  'I agree completely!',
+  'Keep me in the loop. ',
+  'Excellent!',
+  'Random Reaction 3',
 ];
 
 // Get a random item given an array
@@ -102,17 +110,27 @@ const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const getRandomName = () =>
   `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
 
-// Function to generate random assignments that we can add to student object.
-const getRandomAssignments = (int) => {
+// Function to generate random reactions that we can add to thoughts object.
+const getRandomReaction = (int) => {
   const results = [];
   for (let i = 0; i < int; i++) {
     results.push({
-      assignmentName: getRandomArrItem(appDescriptions),
-      score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
+      reactionText: getRandomArrItem(randomReactions),
     });
   }
   return results;
 };
 
+// Function to generate random thoughts that we can add to the user object.
+const getRandomThought = (int) => {
+  const results = [];
+  // for (let i = 0; i < int; i++) {
+    results.push({
+      thoughtText: getRandomArrItem(randomThoughts),
+    });
+  // }
+  return results;
+};
+
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomAssignments };
+module.exports = { getRandomName, getRandomReaction , getRandomThought };

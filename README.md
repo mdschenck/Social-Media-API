@@ -16,18 +16,18 @@ A social network API for a web application where users can share their thoughts,
 
 # Screenshots
 
-![Screenshot  of welcome screen:](./public/images/prioritizer-welcome-screenshot.JPG)
+![Screenshot  of Social Media API CLI interface:](./public/images/social-media-api-screenshot1.JPG)
 
-![Screenshot  of login screen:](./public/images/prioritizer-login-screenshot.JPG)
+![Screenshot  of Social Medai API Mongo DB:](./public/images/social-media-api-screenshot2.JPG)
 
-![Screenshot  of proposals screen:](./public/images/prioritizer-proposals-screenshot.JPG)
+![Screenshot  of Social Media API 3:](./public/images/social-media-api-screenshot3.JPG)
 
 
 # Links
 
-[GitHub Repository](https://github.com/mdschenck/Prioritizer)
+[GitHub Repository](https://github.com/mdschenck/Social-Medai-API)
 
-[Walk Through Video](https://infinite-coast-94356.herokuapp.com/)
+[Walk Through Video](https://--------/)
 
 # User Story
 

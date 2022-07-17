@@ -1,14 +1,14 @@
-const { Course, Student } = require('../models');
+const { User, Thought } = require('../models');
 
 module.exports = {
-  // Get all courses
-  getCourses(req, res) {
-    Course.find()
-      .then((courses) => res.json(courses))
+  // Get all userss
+  getUsers(req, res) {
+    User.find()
+      .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
-  // Get a course
-  getSingleCourse(req, res) {
+  // Get a user
+  getSingleUser(req, res) {
     Course.findOne({ _id: req.params.courseId })
       .select('-__v')
       .then((course) =>

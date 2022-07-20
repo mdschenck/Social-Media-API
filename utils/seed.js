@@ -16,13 +16,14 @@ connection.once('open', async () => {
   // Create empty array to hold the thoughts
   const thoughts = [];
 
-  const reactions = [];
+
 
   // Loop 20 times -- add thoughts to the thoughts array
   for (let i = 0; i < 20; i++) {
-
+   
+    let reactions = [];
     // Get some random reaction objects using a helper function that we imported from ./data
-    const reactions = getRandomReaction(4);
+    reactions = getRandomReaction(4);
     const thoughtText = getRandomThought();
     const userName = getRandomName();
 

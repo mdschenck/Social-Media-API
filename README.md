@@ -25,19 +25,19 @@ This application uses a MongoDB as well as the MVC / Model View Controller desig
 # Screenshots
 
 Social Media API CLI interface - Seeding Database
-![Screenshot  of Social Media API CLI interface:](./public/images/Social-Media-Api-SeedDB.JPG)
+![Screenshot  of Social Media API CLI interface:](./public/images/Social-Media-Api-SeedDB.jpg)
 
 MongoDB Database Users Collection
-![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-ThoughtsCollection.JPG)
+![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-ThoughtsCollection.jpg)
 
 MongoDB Database Thoughts Collection
-![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-UsersCollection.JPG)
+![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-UsersCollection.jpg)
 
 Screenshot of Output on Insomnia Demonstrating Get All Users Route:
-![Screenshot  of Insomnia Output Get All Users Route:](./public/images/Social-Media-Api-Insomnia-Users.JPG)
+![Screenshot  of Insomnia Output Get All Users Route:](./public/images/Social-Media-Api-Insomnia-Users.jpg)
 
 Output on Insomnia Demonstrating Get All Thoughts Route:
-![Screenshot  of Insomnia Output Get All Thoughts Route:](./public/images/Social-Media-Api-Insomnia-Thoughts.JPG)
+![Screenshot  of Insomnia Output Get All Thoughts Route:](./public/images/Social-Media-Api-Insomnia-Thoughts.jpg)
 
 
 # User Story

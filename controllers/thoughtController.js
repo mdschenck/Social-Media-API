@@ -1,12 +1,6 @@
 const { ObjectId } = require('mongoose').Types;
 const { Thought, User, Reaction} = require('../models');
 
-// Aggregate function to get the number of students overall
-// const postCount = async () =>
-//   Thought.aggregate()
-//     .count('thoughtCount')
-//     .then((numberOfThoughts) => numberOfThoughts);
-
 
 module.exports = {
   // Get all thoughts

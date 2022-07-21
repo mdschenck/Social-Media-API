@@ -4,30 +4,41 @@ A social network API for a web application where users can share their thoughts,
 
 # Description
 
+This application uses a MongoDB as well as the MVC / Model View Controller design paradigm to create an API for a Social Media web application.  The application lets the user add User, add Thoughts, and then add Reactions to the Thoughts all utilizing the API routes and request parameters passed in the URL request string, along with JSON data in the request body for adding data with POST and PUT routes. The application also allows the user to add or remove friends from a user, delete a user, and delete a reaction from a thought. This will all be connected to the View component of the MVC when the front end is built.
 
 ## Table of Contents
 
-- [Screenshots](#screenshots)
 - [Links](#links)
+- [Screenshots](#screenshots)
 - [User Story](#user-story)
 - [Technologies Used](#technologies-used)
 - [Acceptance Criteria](#acceptance-criteria)
 - [License](#license)
 
-# Screenshots
-
-![Screenshot  of Social Media API CLI interface:](./public/images/social-media-api-screenshot1.JPG)
-
-![Screenshot  of Social Medai API Mongo DB:](./public/images/social-media-api-screenshot2.JPG)
-
-![Screenshot  of Social Media API 3:](./public/images/social-media-api-screenshot3.JPG)
-
-
 # Links
 
-[GitHub Repository](https://github.com/mdschenck/Social-Medai-API)
+[GitHub Repository](https://github.com/mdschenck/Social-Media-API)
 
-[Walk Through Video](https://--------/)
+[Walk Through Video](https://drive.google.com/file/d/144g-eI86gq_lK0NZ50NR9bFYJ2bRv5eH/view)
+
+
+# Screenshots
+
+Social Media API CLI interface - Seeding Database
+![Screenshot  of Social Media API CLI interface:](./public/images/Social-Media-Api-SeedDB.JPG)
+
+MongoDB Database Users Collection
+![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-ThoughtsCollection.JPG)
+
+MongoDB Database Thoughts Collection
+![Screenshot  of Social Medai API Mongo DB Users Collection:](./public/images/Social-Media-Api-UsersCollection.JPG)
+
+Screenshot of Output on Insomnia Demonstrating Get All Users Route:
+![Screenshot  of Insomnia Output Get All Users Route:](./public/images/Social-Media-Api-Insomnia-Users.JPG)
+
+Output on Insomnia Demonstrating Get All Thoughts Route:
+![Screenshot  of Insomnia Output Get All Thoughts Route:](./public/images/Social-Media-Api-Insomnia-Thoughts.JPG)
+
 
 # User Story
 
